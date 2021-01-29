@@ -1,9 +1,9 @@
 <?php
 define("SGBD","sqlsrv");
-define("SERVERBD","201.49.222.4");
-define("BD", "SANKHYA_HOMO");
+define("SERVERBD","192.168.0.2");
+define("BD", "SANKHYA_TREINA");
 define("USUARIO","sankhya");
-define("SENHA", "bashtecsis#");
+define("SENHA", "#trsup@");
 define("STRSGBD", SGBD . ":" . "Server=" . SERVERBD . ";Database=" . BD);
 
 class BD extends PDO{

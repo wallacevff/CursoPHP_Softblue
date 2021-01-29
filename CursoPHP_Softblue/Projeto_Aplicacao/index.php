@@ -26,7 +26,7 @@
                 $connection = BD::conectaBD();
                 $st = $connection->prepare("SELECT CODUSU, NOMEUSU FROM TSIUSU WHERE NOMEUSU = ? AND AD_SENHA_API = ?");
                 $st->bindParam(1, $_POST["NOMEUSU"]);
-                $senha = md5($_POST["SENHA"]);
+                $senha = $_POST["SENHA"]; //md5($_POST["SENHA"]);
                 $st->bindParam(2, $senha);
                 if($st->execute()){
                     if($registro = $st->fetch(PDO::FETCH_OBJ)){                        
