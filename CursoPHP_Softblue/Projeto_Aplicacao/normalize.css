@@ -1,0 +1,14 @@
+table{
+    margin: 0 auto;
+    width: 960px;
+}
+form{
+    margin: auto auto;
+    width: auto;
+    margin-bottom: 10px;
+}
+table{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Verdana",
+        sans-serif;
+    line-height: 1.6;
+}
